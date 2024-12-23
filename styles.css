@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Agu+Display&family=Fjalla+One&family=Indie+Flower&family=Karla:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playwrite+HR+Lijeva&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Spicy+Rice&family=Titan+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(181,177,255);
+    background: radial-gradient(circle, rgba(181,177,255,1) 0%, rgba(116,255,194,1) 0%, rgba(0,212,255,0.5172269591430323) 100%); 
+}
+h1{
+    font-family: "Fjalla One", serif;
+    font-size: 60px;
+}
+.main-box {
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #F8F4FF;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    display: grid;
+    grid-template-areas:
+    "input-section input-section transaction-details"
+    "total-section total-section transaction-details";
+    gap: 2rem;
+}
+.input-section{
+    grid-area: input-section;
+    padding: 10px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.input-section .label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.label input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    background: white;
+}
+.select{
+    width: 10%;
+    border: none;
+    outline: none; 
+    background: transparent;
+
+    text-align: center;
+}
+#type-input{
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+    color: #005163;
+}
+.dropdown{
+    margin-bottom: 25px;
+}
+.add-transaction{
+    all: unset;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.add-transaction:hover{
+    background: linear-gradient(360deg, rgba(38, 162, 105, 0.99), rgba(143, 240, 164, 1));
+    -webkit-background: linear-gradient(360deg, rgba(38, 162, 105, 0.99), rgba(143, 240, 164, 1));
+    -moz-background: linear-gradient(360deg, rgba(38, 162, 105, 0.99), rgba(143, 240, 164, 1));
+    color: gray;
+}
+
+/*------------------------------------ section 2-------------------------*/
+
+.total-section{
+    border-radius: 15px;
+    grid-area: total-section;
+    padding: 10px;
+    color: white;
+
+    background-color: #005163;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.total-section-sub{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.sec-head{
+    font-size: 30px;
+    font-weight: 600;
+}
+/*-----------------------------section 3---------------------------------*/
+
+.transaction-details{
+    grid-area: transaction-details;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transaction-details h2{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    padding: 5px 30px;
+}
+.transaction-details-sub{
+    width: 100%;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+#transaction-list{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+#transaction-list li{
+    background-color: white;
+    padding: 3px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#transaction-list button{
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+/* Responsive for mobile*/
+
+@media (max-width: 768px) {
+    .main-box{
+        grid-template-areas: 
+        "input-section"
+        "total-section"
+        "transaction-details";
+        font-size: 15px;
+    }
+    .add-transaction{
+        font-size: 15px;
+        font-weight: 800;
+    }
+    .sec-head{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .transaction-details h2{
+        padding: 3px;
+        font-size: 20px;
+    }
+}
+
+
