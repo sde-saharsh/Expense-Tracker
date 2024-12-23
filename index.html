@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=library_add" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Expense Tracker</h1>
+            <div class="main-box">
+
+                <!-- input-section -->
+                <div class="input-section">
+
+                    <!-- Transaction name -->
+                    <label for="name" class="label">Transaction Name :
+                        <input type="text" id="input-name" name="name"
+                            placeholder="Groceries... etc">
+                    </label>
+
+                    <!-- Amount -->
+                    <label for="amount" class="label">Amount :
+                        <input type="number" id="input-amount" name="amount"
+                            placeholder="$ 3000">
+                    </label>
+
+                    <!-- Transaction Type -->
+                    <label for="options" class="label dropdown">Transaction Type :
+                        <select name="options" id="type-input" class="select">
+                            <option value="Credit">Credit</option>
+                            <option value="Debit">Debit</option>
+                        </select>
+                    </label>
+
+                    <button id="add-transaction" class="add-transaction">
+                        <p>ADD TRANSACTION</p>
+                        <span class="material-symbols-outlined">library_add</span>
+                    </button>
+
+                </div>
+
+
+                <!-- total -section -->
+                 <div class="total-section">
+
+                    <div class="total-section-sub sec-head">
+                        <span>Total Amount :</span>
+                        <span id="total-amount"> $ 200</span>
+                    </div>
+                    <div class="total-section-sub">
+                        <span>Total Expense :</span>
+                        <span id="total-expense">$ 300</span>
+                    </div>
+                    <div class="total-section-sub">
+                        <span>Total Income :</span>
+                        <span id="total-income">$ 400</span>
+                    </div>
+
+
+                 </div>
+
+
+
+                 <!-- Transaction Details -->
+                 <div class="transaction-details">
+                    <h2>Transaction Details</h2>
+                    <div class="transaction-details-sub">
+                        <ul id="transaction-list">
+                            <li>
+                                <span>name</span>
+                                <span>$ 300</span>
+                                <span>Expense</span>
+                                <button ><i class="fa-solid fa-trash"></i></button>
+                            </li>
+                            <li>
+                                <span>name</span>
+                                <span>$ 300</span>
+                                <span>Expense</span>
+                                <button><i class="fa-solid fa-trash"></i></button>
+                            </li>
+                            <li>
+                                <span>name</span>
+                                <span>$ 300</span>
+                                <span>Expense</span>
+                                <button><i class="fa-solid fa-trash"></i></button>
+                            </li>
+                            <li>
+                                <span>name</span>
+                                <span>$ 300</span>
+                                <span>Expense</span>
+                                <button><i class="fa-solid fa-trash"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                 </div>
+
+                 
+
+            </div>
+
+        </div>
+        <script src="./script.js"></script>
+        <script src="https://kit.fontawesome.com/a152478d19.js" crossorigin="anonymous"></script>
+    </body>
+</html>
