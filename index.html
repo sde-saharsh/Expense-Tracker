@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Expense Tracker</title>
         <link rel="stylesheet" href="./styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=library_add" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=library_add" />
     </head>
     <body>
         <div class="container">
@@ -28,7 +29,8 @@
                     </label>
 
                     <!-- Transaction Type -->
-                    <label for="options" class="label dropdown">Transaction Type :
+                    <label for="options" class="label dropdown">Transaction Type
+                        :
                         <select name="options" id="type-input" class="select">
                             <option value="Credit">Credit</option>
                             <option value="Debit">Debit</option>
@@ -37,72 +39,45 @@
 
                     <button id="add-transaction" class="add-transaction">
                         <p>ADD TRANSACTION</p>
-                        <span class="material-symbols-outlined">library_add</span>
+                        <span
+                            class="material-symbols-outlined">library_add</span>
                     </button>
 
                 </div>
 
-
                 <!-- total -section -->
-                 <div class="total-section">
+                <div class="total-section">
 
                     <div class="total-section-sub sec-head">
                         <span>Total Amount :</span>
-                        <span id="total-amount"> $ 200</span>
+                        <span id="total-amount"></span>
                     </div>
                     <div class="total-section-sub">
                         <span>Total Expense :</span>
-                        <span id="total-expense">$ 300</span>
+                        <span id="total-expense"></span>
                     </div>
                     <div class="total-section-sub">
                         <span>Total Income :</span>
-                        <span id="total-income">$ 400</span>
+                        <span id="total-income"></span>
                     </div>
 
+                </div>
 
-                 </div>
-
-
-
-                 <!-- Transaction Details -->
-                 <div class="transaction-details">
+                <!-- Transaction Details -->
+                <div class="transaction-details">
                     <h2>Transaction Details</h2>
                     <div class="transaction-details-sub">
                         <ul id="transaction-list">
-                            <li>
-                                <span>name</span>
-                                <span>$ 300</span>
-                                <span>Expense</span>
-                                <button ><i class="fa-solid fa-trash"></i></button>
-                            </li>
-                            <li>
-                                <span>name</span>
-                                <span>$ 300</span>
-                                <span>Expense</span>
-                                <button><i class="fa-solid fa-trash"></i></button>
-                            </li>
-                            <li>
-                                <span>name</span>
-                                <span>$ 300</span>
-                                <span>Expense</span>
-                                <button><i class="fa-solid fa-trash"></i></button>
-                            </li>
-                            <li>
-                                <span>name</span>
-                                <span>$ 300</span>
-                                <span>Expense</span>
-                                <button><i class="fa-solid fa-trash"></i></button>
-                            </li>
+
                         </ul>
                     </div>
-                 </div>
-
-                 
+                </div>
 
             </div>
 
         </div>
         <script src="./script.js"></script>
-        <script src="https://kit.fontawesome.com/a152478d19.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a152478d19.js"
+            crossorigin="anonymous"></script>
     </body>
 </html>
