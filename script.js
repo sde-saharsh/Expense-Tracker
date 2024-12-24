@@ -83,7 +83,7 @@ function update_total_balance(value,input_amount){
 
 
 
-function saveToLocalStorage(){
+// function saveToLocalStorage(){
     
-}
+// }
 
