@@ -163,9 +163,11 @@ h1{
     flex-direction: column;
 }
 #transaction-list{
+    height: 250px;
     display: flex;
     flex-direction: column;
     gap: 3px;
+    overflow-y: scroll;
 }
 #transaction-list li{
     background-color: white;
